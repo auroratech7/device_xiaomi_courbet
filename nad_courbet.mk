@@ -20,16 +20,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/courbet/device.mk)
 
-# Inherit common Ancient configurations
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+# Inherit common NusantaraOS configurations
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
-# Inherit some common AncientOS
+# Inherit some common NusantaraOS
 ANCIENT_OFFICIAL := true
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
-TARGET_GAPPS_ARCH := arm64
+USE_AOSP_CLOCK := true
+TARGET_USES_BLUR := true
+USE_PIXEL_CHARGING := true
+USE_GAPPS=true
 
-PRODUCT_NAME := ancient_courbet
+PRODUCT_NAME := nad_courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 11 Lite 4G

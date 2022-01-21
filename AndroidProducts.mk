@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ancient_courbet.mk
+    $(LOCAL_DIR)/nad_courbet.mk
 
 COMMON_LUNCH_CHOICES := \
-    ancient_courbet-eng \
-    ancient_courbet-userdebug \
-    ancient_courbet-user
+    nad_courbet-eng \
+    nad_courbet-userdebug\
+    nad_courbet-user
